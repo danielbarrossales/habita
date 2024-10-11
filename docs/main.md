@@ -20,7 +20,6 @@ flowchart LR;
     markDone -. extends .-> update;
 
     update -. includes .-> view;
-    add -. includes .-> view;
     markToDo -. extends .-> add;
     delete -. includes .-> view;
   end;
